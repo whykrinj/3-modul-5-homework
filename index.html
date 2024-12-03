@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <header class="bg-[#2B3844]">
+        <nav class="conatainer mx-auto max-w-[90%] items-center justify-between py-[24px]">
+            <div class="flex justify-between items-center">
+                <p class="text-[24px] text-white font-bold">Where in the world?</p>
+                <p>Dark Mode</p>
+            </div>  
+        </nav>
+    </header>
+
+    <main class="py-10 container mx-auto max-w-[90%] pt-[82px]">
+        <section id="search" class="pb-[82px]">
+                <label for="search-input " class="input relative py-4 bg-[#2B3844] shadow-lg pl-[72px] w-[30%]">
+                    <svg class="absolute top-1/2 left-8 -translate-y-1/2" fill="#fff" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17.5" height="17.5" viewBox="0 0 24 24">
+                        <path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"></path>
+                      </svg>
+                      <input type="text" id="search-input" placeholder="search..." class="min-w-[400px]">
+                </label>
+        </section>
+        <section id="countries" class="flex ">
+            <span id="loading" class="loading loading-spinner loading-lg text-primary mx-auto"></span>
+            <div id="countries-list" class="flex flex-wrap gap-5">
+                
+            </div>
+        </section>
+    </main>
+    
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
